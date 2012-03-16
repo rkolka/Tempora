@@ -1,6 +1,6 @@
 Description
 --------
-  'A Track-Changes Tool for Oracle' - Tempora is Oracle Package that emits SQL DDL code for creating triggers and additional tables to make your database "temporal". After you have generated and executed DDL on your table(s), Oracle logs all transaction times and past values of said table(s). Original table(s) stay unchanged apart from added triggers. 
+  'A Track-Changes Tool for Oracle' - Tempora is Oracle Package that emits SQL DDL code for creating triggers and additional tables to make your database "temporal". After you have generated and executed DDL on your table(s), Oracle logs all transaction times and past values of said table(s). Original table(s) stays unchanged apart from added triggers. 
   
 	
 Credits
@@ -9,7 +9,7 @@ Credits
   PL/SQL crafted after their ideas by Riivo Kolka, 2010-2012.
 
   
-Requirments
+Requirements
 -------
   Oracle 11g Express or other Edition.
 
