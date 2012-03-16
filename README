@@ -1,0 +1,35 @@
+Description
+--------
+  'A Track-Changes Tool for Oracle' - Tempora is Oracle Package that emits SQL DDL code for creating triggers and additional tables to make your database "temporal". After you have generated and executed DDL on your table(s), Oracle logs all transaction times and past values of said table(s). Original table(s) stay unchanged apart from added triggers. 
+  
+	
+Credits
+--------
+  Thanks to C. J. Date, Hugh Darwen and Nikos A. Lorentzos for "a detailed investigation into the application of interval and relation theory to the problem of temporal database management" which is the subtitle of their fantastic book about temporal databases - Temporal data and the relational model - [http://books.google.ee/books?id=grTubz0fjSEC].  
+  PL/SQL crafted after their ideas by Riivo Kolka, 2010-2012.
+
+  
+Requirments
+-------
+  Oracle 11g Express or other Edition.
+
+  
+Installation
+-------
+  * Create the package TEMPORA in the same schema as your tables. 
+  * Enable DBMS output. 
+  * Call procedure TEMPORALIZE_TABLE('YOUR_TABLE_NAME', 'YOUR_TABLES_PK_CONSTRAINT_NAME'). 
+  * Copy DBMS output and run it.
+
+Further Development  
+-------
+  This is not a mature tool yet. 
+  In progress is generating definitions for "history-views" or ..._NOW_AND_THEN virtual relvars as they are called in the book. 
+  Much can be improved in handling schema changes etc. 
+  
+  
+Contact info
+-------
+  I can be contacted through riivo.kolka at g mail.com
+  
+  Riivo Kolka.
