@@ -1674,7 +1674,7 @@ BEGIN
          --          U$TD_COLUMNS
       WHERE
          table_name = p_tab_name
-      AND column_name NOT IN('VERSION', 'MUUTJA', 'MUUDETUD', 'LOOJA', 'LOODUD')
+      AND column_name NOT IN('VERSION')
       AND column_name NOT IN
          (
             SELECT
