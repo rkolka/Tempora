@@ -1160,9 +1160,9 @@ IS
    l_result VARCHAR2(32767) ;
 BEGIN
    IF p_default = 1 THEN
-      l_result := 'TIMESTAMP (0) DEFAULT sysdate NOT NULL';
+      l_result := 'TIMESTAMP (6) DEFAULT systimestamp NOT NULL';
    ELSE
-      l_result := 'TIMESTAMP (0) NOT NULL';
+      l_result := 'TIMESTAMP (6) NOT NULL';
    END IF;
    RETURN l_result;
 END def_d$col;
